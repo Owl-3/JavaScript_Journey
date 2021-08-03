@@ -79,5 +79,33 @@ console.log(parseFloat(strNum1));
 
 //toFixed() takes a floating number and rounds it off to a given position
 var strFloat1 = 34.54267;
-console.log(strFloat1.toFixed(2)); //converts to 2-decimal AnimationPlaybackEvent.
+console.log(strFloat1.toFixed(2)); //rounds off to 2-decimal places. You can choose the number of decimal places by changing the value(x) in the toFixed(x) parenthesis.
 
+//##STRINGS
+
+var string1 = 'My name is Dancan'
+console.log(typeof(string1));
+
+//handling double quotes and single quotes in a string
+//var doubleQuotes = " "Messi" is my nickname";
+//console.log(typeof(doubleQuotes); //this generates an error. Had to comment them out to run the proceeding codes.
+//An alternative aroound this is using a backslash. Lets dig in!
+//one way to solve the above is by adding a backslash before the start of the opening double quote of inside string and immediately before the closing double quote. 
+
+//Double Quotes
+var doubleQuotes = " \"Messi\" is my nickname";
+console.log(doubleQuotes); 
+
+//Single Quotes
+//var singleQuotes = ' 'Messi' is my nickname'; //this generates an error simmilar to one above. can be solved by adding backslash similar to double quotes.
+
+var singleQuotes = ' \'Messi\' is my nickname';
+console.log(singleQuotes);
+
+//Another way around this is by using single and double Quotes alternatively in a single string1. Let's see! 
+var doubleQuotes = "'Messi' is my nickname";
+console.log(singleQuotes);
+
+var singleQuotes = ' "Messi" is my nickname';
+console.log(singleQuotes);
+ 
