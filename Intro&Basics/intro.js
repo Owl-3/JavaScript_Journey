@@ -107,5 +107,63 @@ var doubleQuotes = "'Messi' is my nickname";
 console.log(singleQuotes);
 
 var singleQuotes = ' "Messi" is my nickname';
-console.log(singleQuotes);
+console.log(singleQuotes); 
+
+
+//STRING FUNCTIONS
+
+//1.length funtion
+//returns the length of this string
+
+var myFirstString = "This is my first string function";
+console.log(myFirstString.length); 
+
+//2. indexOf
+// finds the index/position of a string inside the parent string.
  
+console.log(myFirstString.indexOf('function'));
+console.log(myFirstString.indexOf('This'));
+
+//3. lastIndexOf
+//finds the index of the last similar string inside a parent string. For example, in the case below, we have 2 functions.
+
+var myFirstString = "This function is my first string function";
+console.log(myFirstString.lastIndexOf('function'));
+
+//4. slice
+//extracts part of a string. 
+//syntax: .slice(start index, end index)
+var myFirstString = "This is my first string function";
+console.log(myFirstString.slice(0, 4)); //Note! the function slices the characters.
+console.log(myFirstString.slice(24, 32));
+console.log(myFirstString.slice(-9)); //prints the last 9 characters.
+console.log(myFirstString.slice(7)); // prints from 7th character till the end.
+
+//5. substr()
+//Gets the substring of the parent string. Works more like slice.Works
+console.log(myFirstString.substr(24, 32));
+
+//6. toUpperCase()
+//converts characters to upper case
+console.log(myFirstString.toUpperCase());
+
+//7. toLowerCase()
+//converts characters to lower case
+
+console.log(myFirstString.toLowerCase());
+//8. concat()
+//combines two or more strings
+var sentence1 = 'JavaScript ';
+var sentence2 = 'battlefield';
+console.log(sentence1.concat(sentence2));
+
+// use '+' as an alternative to concat() function/ for more strings/elements.
+console.log(sentence1 + sentence2);
+
+//9.trim()
+//removes extra-spaces
+var extraSpaces = '    My name is Dancan';
+console.log(extraSpaces.trim()); //remobves the spaces between the first single quote and the first string character.
+
+var extraSpaces = '    My   name is Dancan   ';
+console.log(extraSpaces.trim());
