@@ -78,7 +78,6 @@ console.log(parseFloat(strNum2));
 console.log(parseFloat(strNum1));
 
 //toFixed() takes a floating number and rounds it off to a given position
-var strFloat1 = '34.54267';
-console.log(strFloat1.toFixed());
-console.log(strFloat1.toFixed(2)); //convers to 2-decimal AnimationPlaybackEvent.
+var strFloat1 = 34.54267;
+console.log(strFloat1.toFixed(2)); //converts to 2-decimal AnimationPlaybackEvent.
 
