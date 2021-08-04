@@ -184,3 +184,15 @@ console.log(string2.split("o")); //seperates wherever there's a letter 'o' or an
  //:("", x) - use of limit seperator. x is the limit.
  console.log(string2.split("", 4)); //sets seperator as "" with limit of the first 4 characters.
                             
+
+ 
+ 
+ //NULL and UNDEFINED VALUES
+//NULL- value assigned to a variable to indicate it holds no value.
+//Undefined - variable declared but not initialized.
+
+var name   //
+console.log(name); //outputs undefined. the variable name is not allocated any value.
+
+var name = null;
+console.log(name); //outputs null. variable name is assigned a null value.
