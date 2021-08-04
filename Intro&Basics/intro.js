@@ -196,3 +196,49 @@ console.log(name); //outputs undefined. the variable name is not allocated any v
 
 var name = null;
 console.log(name); //outputs null. variable name is assigned a null value.
+
+
+
+
+
+//CONDITIONAL STATEMENTS
+
+//if-else statements
+
+let hour = 13;
+if ( hour < 9) {
+    console.log('Good Morning');
+}
+else if (hour > 12 ){
+    console.log('Good Afternoon');
+}
+else{
+    console.log('Good Evening');
+}
+
+
+//switch ... case
+//In the codes below, I want to indicate the javaScript topics I am supposed to cover. Let's dip in!
+var currentDay = 'Tue'
+switch (currentDay) {
+    case 'Mon':
+        console.log('Conditional statements');
+        break;
+    case 'Tue':
+        console.log('Operators');
+        break;
+    case 'Wed':
+        console.log('Type Coercion');
+        break;
+    case 'Thur':
+        console.log('Objects and Arrays');
+        break;
+    case 'Fri':
+        console.log('Loops');
+        break;                
+
+    default:
+        console.log('HTML and CSS');
+        break;
+}
+
