@@ -166,4 +166,21 @@ var extraSpaces = '    My name is Dancan';
 console.log(extraSpaces.trim()); //remobves the spaces between the first single quote and the first string character.
 
 var extraSpaces = '    My   name is Dancan   ';
-console.log(extraSpaces.trim());
+console.log(extraSpaces.trim()); //as noticed in the output, the trim() function only removes the spaces before or after the string characters but not between them!
+
+//10.charAt()
+//takes the position/index as an argument and return the character ata that position
+console.log(extraSpaces.charAt(15));  //took the position of the character indexed 15 and outputed it.
+ 
+//11. split()
+//splits string on the based on the argument passed.
+var string2 = 'This is my JavaScript introductory lesson'
+console.log(string2.split('')); //splits the individual character including whitespace.
+
+//other forms of formatting: ("o") -use of a letteras a seperator.
+console.log(string2.split("o")); //seperates wherever there's a letter 'o' or any other letter you might passed in the argument.
+
+
+ //:("", x) - use of limit seperator. x is the limit.
+ console.log(string2.split("", 4)); //sets seperator as "" with limit of the first 4 characters.
+                            
