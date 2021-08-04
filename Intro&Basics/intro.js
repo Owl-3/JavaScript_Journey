@@ -242,3 +242,83 @@ switch (currentDay) {
         break;
 }
 
+
+
+//OPERATORS
+
+addition: '+'
+var num1 = 10;
+var num2 = 4;
+console.log(num1 + num2); //outputs 14 (10 + 4)
+
+substraction: '-'
+console.log(num1 - num2); //outputs 6 (10 - 4)
+
+modulus:  '%'
+console.log(num1 % num2); //outputs 2 (10 % 4). 2 is the remainder when you divide 10 by 4..
+
+multiplication: '*'
+console.log(num1 * num2); //outputs 40 (10 * 4)
+
+division: '/'
+console.log(num1 / num2); //outputs 2.5 (10 / 2)
+
+increment: '++' // post-increment- first variable used then values increased. Or, operator increases and returns the value before increasing.
+                //pre-increment- increament operator increases and returns the value after the increase. Let's dip in!
+//post-increament.
+
+//example1
+ let a = 2;
+ b = a++;
+ console.log(b);   //outputs b=2. This is the value before the increment.
+ console.log(a);   //outputs a=3. the value a increases.          
+
+ //pre-increament
+ let c = 5;
+ d = ++c;
+ console.log(c); //outputs 6. The variable c is increased and returned.
+ console.log(d); // outputs 6. variable c is increased and returned.
+
+decreament: '--'
+//applies pre and post increment
+//post-decrement
+let x = 4;
+y = x--;
+console.log(y);
+console.log(x);
+
+//pre-decrement
+let k = 4;
+j = --k;
+console.log(j);
+console.log(k);
+
+
+
+//ASSIGNMENT OPERATORS
+//assigns values to variables
+
+//=
+//var num1 = 3; //assigns value 3 to varia
+
+//+=
+var num1 = 4;
+var num2 = 10;
+num1 += 16; //means that 16 is added to the original value of num1.
+console.log(num1); 
+
+// -=
+num2 -= 3; // num2 = (num2 - 3)
+console.log(num2);
+
+// *=
+num2 *=  5; //num2 = (num2 * 5)
+console.log(num2); //outputs 35 because num2 was changed to 7 in the preceding expression
+
+// %=
+num2 %= 4; //num2 = num2 % 4 ==>gives a remaindeer of 3
+console.log(num2);
+
+// /=
+num1 /= 2; // num1 = num1 / 2
+console.log(num1);
