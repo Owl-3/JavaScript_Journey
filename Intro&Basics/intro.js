@@ -322,3 +322,71 @@ console.log(num2);
 // /=
 num1 /= 2; // num1 = num1 / 2
 console.log(num1);
+
+
+//COMPARISON AND LOGICAL OPERATORS
+
+//Comparison Operators. includes; ==, ===, !=, >=, <=, >, <.
+if (7 == '7') {console.log(true);} //converts the two variable values to the same type before comparing.
+if (5 === 5) {console.log(true);} // === does not convert/coerce data type and returns true on if the two variable values being compared are of similar types and values.
+if (4 != 4) {console.log(true);} else {console.log(false);} //returns false
+if (5 != '5') {console.log(true);} else {console.log(false);} // returns false. != converts the variables to similar data types and compares.
+if (3 >= 4) {console.log(true);} else {console.log(false);} //returns false
+if (3 <= 4) {console.log(true);} else{console.log(false);} //returns true
+if (3 > 4) {console.log(true);} else {console.log(false);} //returns false
+if (3 < 4) {console.log(true);} else {console.log(false);} //returns true
+
+
+//Logical Operators. Includes; &&, ||, ! 
+ if (5 < 9 && 5 > 2) {console.log(true);} else {console.log(false);} //all of the conditions has to be true for && to return true. it returns false if one/all of the conditions are false. 
+ if (5 < 9 && 5 < 2) {console.log(true);} else {console.log(false);} //returns false because the second condition (5<2) if false.
+
+ if (5 < 9 || 5 > 2) {console.log(true);} else {console.log(false);} //one of the conditions has to be true for || to return true. it returns false if all of the conditions are false. 
+ if (5 < 9 || 5 < 2) {console.log(true);} else {console.log(false);} //returns true because one of the conditions (5<9) is true.
+ if (5 > 9 || 5 < 2) {console.log(true);} else {console.log(false);} //returns false because both conditions are false.
+
+ if ( !(5 < 9) ) {console.log(true);} else {console.log(false);} //returns false because 5 is less than 9.
+
+
+ //Ternary Operator 
+ //syntax (expression) ? a:b  ==>implies that if expression is true, execute statement a, otherwise execute b. 
+ 5 < 7 ? console.log(true) : console.log(false) //Returns true. Means if expression is true, print the first statement otherwise print the following statement. 
+ 5 > 7 ? console.log(true) : console.log(false) //Returns false. The expression is false thus the second statement is executed.
+
+
+
+ // Type Coercion 
+ //Implicit Coercion
+
+ //converting one data type to another.
+ var nickName = "Messi"
+ var favNum = 10;
+ sum = nickName + favNum; //integer in the variable favNum is implicitly converted/coerced to string and is concatenated with the string.
+ console.log(sum);
+ console.log(typeof(sum)); //returns data type string
+
+ //Explicit type Conversion
+
+ //To number.
+ //the string value of a variable can be coerced using the Number() method to an integer. 
+ var number1 = '10';
+ var number2 = '15';
+ sum = Number(number1) + Number(number2); //number converts string value to integer.
+ console.log(sum);
+ console.log(typeof(sum)); //outputs data type number.
+ console.log(Number(true), typeof(Number(true))); //outputs 1 and string(the data type) 
+console.log(Number(false), typeof(Number(false))); //returns 0 and string
+console.log(Number('orange'), typeof(Number('orange'))); //outputs NaN and a number of data type. The string is however coerced to a number type.
+
+//To string.  
+var favNum = 10;
+console.log(String(favNum)); //outputs '10'.
+console.log(typeof(String(favNum))); 
+console.log(typeof(String(true))); //outputs string.
+
+
+//to Boolean
+console.log(Boolean(1), typeof(Boolean(1)));  //outputs true and boolean
+console.log(Boolean(0), typeof(Boolean(0))); //outputs false and boolean
+console.log(Boolean('orange'), typeof(Boolean('orange')));
+console.log(Boolean(undefined), typeof(Boolean(undefined)));
